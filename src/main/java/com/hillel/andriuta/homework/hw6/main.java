@@ -45,10 +45,12 @@ public class main {
 
         int t1Res = player1T1 + player2T1 + player3T1 + player4T1 + player5T1;
         int t2Res = player1T2 + player2T2 + player3T2 + player4T2 + player5T2;
+        double t1Avg = t1Res / 5;
+        double t2Avg = t2Res / 5;
 
-        if (t1Res > t2Res){
+        if (t1Avg > t2Avg){
             System.out.println(t1Name + " wins with " + t1Res + " points");
-        } else if (t1Res < t2Res){
+        } else if (t1Avg < t2Avg){
             System.out.println(t2Name + " wins with " + t2Res + " points");
         } else {
             System.out.println("Draw");
