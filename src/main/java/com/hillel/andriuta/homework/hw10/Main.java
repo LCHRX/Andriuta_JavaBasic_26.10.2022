@@ -21,10 +21,28 @@ public class Main {
         int match = 0;
 
         for (int i = 0; i < arrayComp.length; i++) {
-            if (arrayComp[i] == arrayPl[i]) {
+            if (arrayComp[i] == arrayPl[i] && i < arrayComp.length) {
                 match++;
             }
         }
-        System.out.println("Кількість збігів: " + match);
+
+
+
+        System.out.println("Кількість збігів: " + match + ".");
+        if (match > 0){
+            System.out.print("Збіг в ячейках: ");
+        }
+        int j = match;
+        for (int i = 0; i < arrayComp.length; i++) {
+            if (j > 1 && arrayPl[i] == arrayComp[i]){
+                System.out.print(++i + ", ");
+                i--;
+                j--;
+                }else if (arrayPl[i] == arrayComp[i] && j == 1){
+                System.out.println(++i + ".");
+            }
+            }
+
+        }
     }
-}
+
