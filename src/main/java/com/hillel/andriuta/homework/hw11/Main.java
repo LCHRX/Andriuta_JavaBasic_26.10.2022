@@ -50,7 +50,7 @@ public class Main {
                 array1[i][j] = (int) (Math.random() * 101);
             }
         }
-        System.out.println("Ваша матриця");
+        System.out.println("Ваша матриця ");
 
         for (int i = 0; i < array1.length ; i++) {
             for (int j = 0; j <array1[i].length ; j++) {
