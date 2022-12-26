@@ -7,8 +7,10 @@ public class Person {
                 personInfo("Jackie", "Chan", "Shanghai", "12312412412");
                 personInfo("Sherlock","Holmes","London","37742123513");
             }
-            static void personInfo(String name, String surname, String city, String number){
+            static String personInfo(String name, String surname, String city, String number){
                 System.out.println("Зателефонувати громадянину " + name + " " + surname + " із міста " + city +" можна за номером " + number);
+                return name + surname + city + number;
+
             }
         }
 
