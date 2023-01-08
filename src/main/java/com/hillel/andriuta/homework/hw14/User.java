@@ -2,19 +2,19 @@ package com.hillel.andriuta.homework.hw14;
 
 public class User {
 
-   final String name;
-    final int birthDay;
-    final int birthMonth;
-    final int birthYear;
-    final String email;
-    final String phone;
+    private final String name;
+    private final int birthDay;
+    private final int birthMonth;
+    private final int birthYear;
+    private final String email;
+    private final String phone;
 
-    String lastName;
-    int weight;
-    int pressure;
-    int steps;
+    private String lastName;
+    private int weight;
+    private int pressure;
+    private int steps;
+    private int age;
 
-    int age;
 
 
 
@@ -58,8 +58,48 @@ public class User {
     }
 
     public int getAge() {
+        if (birthDay <= 8 && birthMonth == 1) {
+            age = 2023 - birthYear;
+        } else {
+            age = 2023 - birthYear - 1;
+        }
         return age;
     }
+
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
+    }
+
+    public int getSteps() {
+        return steps;
+    }
+
+    public void setSteps(int steps) {
+        this.steps = steps;
+    }
+
+
 
     public void printAccountInfo() {
         System.out.print("Name: " + getName() + " ");
@@ -73,11 +113,6 @@ public class User {
         System.out.println("Email: " + getEmail());
         System.out.println("Phone: " + getPhone());
 
-        if (birthDay < 8 && birthMonth == 1){
-            age = 2023 - birthYear;
-        } else {
-            age = 2023 - birthYear - 1;
-        }
 
         System.out.println("Age: " + getAge());
         System.out.println();

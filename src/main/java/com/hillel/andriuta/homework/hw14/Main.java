@@ -12,10 +12,10 @@ public class Main {
         Gina.printAccountInfo();
         Igor.printAccountInfo();
 
-        Gina.lastName = " Denver";
-        Gina.weight = 57;
-        Alex.weight = 90;
-        Alex.steps = 10000;
+        Alex.setSteps(10000);
+        Alex.setWeight(85);
+        Gina.setPressure(100);
+        Gina.setSteps(7000);
 
         Alex.printAccountInfo();
         Gina.printAccountInfo();
