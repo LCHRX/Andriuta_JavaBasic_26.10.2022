@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         int a = (int) (Math.random() * 11);
         Scanner scanner = new Scanner(System.in);
-        int attempts = 10;
+        int attempts = 3;
         int i = attempts;
         System.out.println("Please enter the number(You have " + i + " attempts left)");
         while (i > 0) {

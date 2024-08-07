@@ -1,23 +1,21 @@
-package com.hillel.andriuta.lessons.lesson13.main.participants;
+package com.hillel.andriuta.lessons.lesson13.main.interfaces;
 
-public class Cat extends Participant{
+import com.hillel.andriuta.lessons.lesson13.main.participants.Participant;
+
+public class Cat extends Animal implements Runnable, Swimmable {
 
 
     public Cat(String name, int age) {
         super(name, age);
     }
 
-    public void demo(){
-        System.out.println("demo");
-    }
-
-@Override
+    @Override
     public void run() {
-        System.out.println("Cat " + getName() + " runs");
+        System.out.println("Cat " + name + " runs");
     }
 
-@Override
+    @Override
     public void swim() {
-        System.out.println("Cat " + getName() + " swims");
+        System.out.println("Cat " + name + " swims");
     }
 }

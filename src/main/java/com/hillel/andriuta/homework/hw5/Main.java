@@ -5,7 +5,7 @@ public class Main {
         int war1 = 13;
         int arch1 = 24;
         int hman1 = 46;
-        double dynLiAttackRate =(double) (war1 + arch1 + hman1) * 860 / 3;
+        double dynLiAttackRate = (double) (war1 + arch1 + hman1) * 860 / 3;
         int war2 = 9;
         int arch2 = 35;
         int hman2 = 12;
